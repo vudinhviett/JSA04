@@ -59,6 +59,7 @@ header {
     width: 100%;
     max-width: 992px;
     margin: auto;
+    padding-block: 10px;
 }
 .menu-option {
     margin-inline: 20px;
@@ -130,12 +131,20 @@ header {
 }
 
 /* Section 3 */
-#section-3 {
+#section-3 , #section-6 {
     background-color: #f4f4f4;
 }
 #section-3 #section-content-3 {
     margin-block: 0;
     display: flex;
+}
+#section-3 .content {
+    display: flex;
+    width: 500px;
+}
+#section-3 .description-content {
+    width: 300px;
+    margin-left: 20px;
 }
 #section-content-3 > .content-box:first-child {
     margin-left: -5%;
@@ -146,9 +155,13 @@ header {
 #section-content-3 > .content-box:last-child > .content {
     margin-block: 40px;
 }
-#section-content-3 > .content-box:last-child > .content > span {
-    padding: 10px 20px;
-    color: var(--color-primary) ;
+#section-content-3 > .content-box:last-child > .content > .number-radius {
+    color: var(--color-primary);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
     font-size: 20px;
     border-radius: 50%;
     border: 1px solid var(--color-primary);
@@ -175,4 +188,111 @@ header {
 #section-4 > .container > .box > .tw {
     color: var(--color-primary);
     text-decoration: underline;
+}
+
+/* Section 6 */
+#section-6 {
+    padding-bottom: 50px;
+}
+#section-6 > .container {
+    display: flex;
+}
+#section-6 > .container > .box {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 5px;
+    margin-inline: 30px;
+    padding: 10px;
+}
+#section-6 > .container > .box .plan {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#section-6 > .container > .box .price {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+#section-6 > .container > .box .price > span {
+    font-size: 20px;
+}
+#section-6 > .container > .box > .main {
+    height: 130px;
+    border-bottom: #eee 1px solid;
+}
+#section-6 > .container > .box > .benefit {
+    height: 150px;
+    padding-block: 10px;
+}
+#section-6 > .container > .box > .benefit > .content {
+    margin-left: 30px;
+    margin-block: 10px;
+}
+#section-6 > .container > .box > .signup {
+    text-align: center;
+    border-top: #eee 1px solid;
+    padding: 10px;
+}
+
+/* Section 7 */
+#section-7 {
+    /* height: 500px; */
+}
+#section-7 > form {
+    max-width: 700px;
+    margin: 70px auto;
+    display: table;
+    text-align: left;
+    padding-bottom: 50px;
+}
+#question {
+    margin-right: 80px;
+    margin-bottom: 10px;
+}
+#input-text{
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#input-textarea{
+    width: 190px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+th > button {
+    padding: 10px 30px;
+    background-color: #e67e22;
+    border-radius: 200px;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+footer {
+    background: #333;
+    text-align: center;
+    color: #aaa;
+    height: 150px;
+    padding-block: 20px;
+    padding-inline: 80px;
+}
+footer > .top {
+    display: flex;
+    justify-content:space-around;
+}
+footer > .top > .socal {
+    float: right;
+}
+footer > .top > .section {
+    display: flex;
+}
+footer > .top > .section > p {
+    margin-inline: 10px;
+}
+footer > .bottom > p{
+    margin: auto;
+    margin-block: 20px;
+    max-width: 992px;
 }
