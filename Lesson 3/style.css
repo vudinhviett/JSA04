@@ -1,0 +1,21 @@
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+.square:hover{
+    background-color: red;
+}
+#email{
+    padding:10px;
+    outline: none;
+}
+#email:focus {
+    border: 1px solid pink;
+}
+#email:invalid {
+    border: 1px solid red;
+}
+#email:valid {
+    border: 1px solid green;
+}
