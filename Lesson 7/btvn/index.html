@@ -8,8 +8,28 @@
 </head>
 <body>
     <script>
-        let equation = (a,c) => {return -c/a}
-        console.log(equation(5,8));
+        let equation = (a,b) =>{
+            a = prompt('Nhap a')
+            b = prompt('Nhap b')
+            if (a ==0) {
+                alert = prompt('Khong tinh duoc')
+            } else {
+                let calc = -b/a
+                alert('Ket qua: '+calc)
+            }
+        }
+        equation()
+
+let c1 = prompt("Nhap tham so a");
+let c2 = prompt("Nhap tham so b");
+const tg = (a,b) => {
+let canh_huyen = Math.sqrt((a * a) + (b * b));
+let duong_cao = Math.sqrt(((a * a) * (b * b)) / ((a * a) + (b * b)));
+alert("Do dai canh huyen la: " + canh_huyen);
+alert("Do dai duong cao la: " + duong_cao);
+}
+tg();
+
     </script>
 </body>
 </html>
