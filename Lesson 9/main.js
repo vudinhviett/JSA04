@@ -50,4 +50,3 @@ select('#create-new-student-btn').onclick = () => {
         })
         .catch((e) => console.log(e))
 }
-    
